@@ -25,6 +25,7 @@ const products = [
         description: "Lightweight and durable with crystal-clear sound. Perfect for on-the-go listening.",
         price: "$59.99",
         isFavorite: false
+        
     },
     {
         name: "Z10 Ultra",
