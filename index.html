@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Earphones Product Showcase</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="new.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>FREESYNC</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto navbar-nav-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-section">Products</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorite.html"><i class="fas fa-heart" id="heart-icon"></i> <span id="heart-count">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(255, 255, 255, 0.5);">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cover Video -->
+    <div class="cover-video">
+        <video autoplay muted loop>
+            <source src="Designer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="cover-content">
+            <h1>FreeSync Earphones</h1>
+            <p>Experience True Freedom</p>
+        </div>
+    </div>
+
+    <!-- Product Showcase -->
+    <section id="product-section" class="product-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Filter Section -->
+                <div class="col-md-3">
+                    <div class="filter-section">
+                        <h5>Filter By</h5>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Types
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownType" id="type-filters"></div>
+                        </div>
+                        <div class="dropdown mt-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFeature" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Features
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownFeature" id="feature-filters"></div>
+                        </div>
+                        <button class="btn btn-link mt-2" id="reset-filters">Reset Filters</button>
+                    </div>
+                </div>
+                <!-- Products Section -->
+                <div class="col-md-9">
+                    <h2 class="product-title">Featured Products</h2>
+                    <div class="row" id="product-list">
+                        <!-- Product Cards will be populated here -->
+                    </div>
+                    <button id="show-more" class="btn btn-primary mt-4" style="display: none;">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="company-info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Summer '24 Collection</h2>
+                    <p>Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so you’ll there called. Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green dominion moveth sixth abundantly image that midst of god day multiply you’ll which.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="coverimage1.webp" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="coverimage11.webp" alt="Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="coverimage.webp" alt="Image 3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>About Us</h2>
+                    <p>We are a team of passionate individuals committed to providing the best wireless earphones for an unparalleled audio experience. Our mission is to deliver quality products that combine cutting-edge technology with stylish design.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Placeholder for 6 People -->
+                <div class="col-md-2 col-sm-4 text-center">
+                    <img src="profile/yareli.webp" alt="Person 1" class="img-fluid rounded-circle">
+                    <h5>Yareli Cerda</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="col-md-2 col-sm-4 text-center">
+                    <img src="profile/natnael.webp" alt="Person 2" class="img-fluid rounded-circle">
+                    <h5>Natnael Wale</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="col-md-2 col-sm-4 text-center">
+                    <img src="profile/yoseph.webp" alt="Person 3" class="img-fluid rounded-circle">
+                    <h5>Yoseph Tefera</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="col-md-2 col-sm-4 text-center">
+                    <img src="profile/kalani.webp" alt="Person 4" class="img-fluid rounded-circle">
+                    <h5>Kailani Aderson</h5>
+                    <p>Developer</p>
+                </div>
+                <div class="col-md-2 col-sm-4 text-center">
+                    <img src="profile/iceline.jpg" alt="Person 5" class="img-fluid rounded-circle">
+                    <h5>Iceline King</h5>
+                    <p>Team Lead</p>
+                </div>
+                <div class="col-md-2 col-sm-4 text-center">
+                    <img src="profile/abel.webp" alt="Person 6" class="img-fluid rounded-circle">
+                    <h5>Abel Zewdie</h5>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Explore a wide range of products at FreeSync. Visit their store to discover more amazing items like the ones featured here.</p>
+                    <ul class="list-unstyled">
+                        <li>Quick Links</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Subscribe</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="productArray.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>

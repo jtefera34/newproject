@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Products</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="new.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        .product-page {
+            display: flex;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .product-images {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex: 2;
+        }
+        .main-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product-details h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-details p {
+            margin-bottom: 20px;
+        }
+        .product-details .price {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .product-details .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .product-card-heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>FREESYNC</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto navbar-nav-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product-section">Products</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorites.html"><i class="fas fa-heart" id="heart-icon"></i> <span id="heart-count">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(255, 255, 255, 0.5);">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Favorite Products Section -->
+    <section id="favorites-section" class="product-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="product-title">Favorite Products</h2>
+                    <div id="favorite-list">
+                        <!-- Favorite Product Cards will be populated here -->
+                    </div>
+                    <button id="show-more-favorites" class="btn btn-primary mt-4" style="display: none;">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Have given likeness every. Very were beginning signs moveth. Fly above sea itself. Divided so you’ll there called. Gathering dry earth. Isn’t heaven appear. Replenish. Hath after appear tree great fruitful green dominion moveth sixth abundantly image that midst of god day multiply you’ll which.</p>
+                    <ul class="list-unstyled">
+                        <li>Quick Links</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Subscribe</h5>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="productArray.js"></script>
+    <script src="favorites.js"></script>
+</body>
+</html>
