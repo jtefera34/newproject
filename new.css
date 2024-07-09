@@ -42,9 +42,13 @@ body {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+.coverbackground{
+  background-color: black !important;
+}
 
 .cover-content {
   position: absolute;
+  /* background-color: black; */
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
